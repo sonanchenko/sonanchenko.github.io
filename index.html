@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gmail Filter Manager - Personal utility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal account utility</p>
+    <h1>Gmail Filter Manager</h1>
+    <p>A private tool for reviewing Gmail filters, making precise rule changes, and keeping verified backups in the account owner's Google Drive.</p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Lists Gmail filter definitions and available labels.</li>
+      <li>Previews rule conditions and actions before applying a change.</li>
+      <li>Creates, replaces, or deletes rules only when instructed by the owner.</li>
+      <li>Saves and verifies a complete filter backup before each rule change.</li>
+    </ul>
+    <p>The tool runs in the owner's Google Apps Script project. Its management panel and API are restricted to the owner. This public website only explains the tool; it does not provide account access or an authorization endpoint.</p>
+    <h2>Google account access</h2>
+    <p>The application requests Gmail filter settings, Gmail labels, and access to Drive files it creates or that the owner explicitly opens with it. It does not request permission to read message bodies or send mail. Rules can affect how future messages are handled by Gmail.</p>
+    <p>Filter backups can contain email addresses and other personal information in rule conditions. Backups, account tokens, and actual filter definitions are not published on this website.</p>
+    <nav aria-label="Application information">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+    </nav>
+    <footer>Owner and support: <a href="mailto:sergey.onanchenko@gmail.com">sergey.onanchenko@gmail.com</a></footer>
+  </main>
+</body>
+</html>
